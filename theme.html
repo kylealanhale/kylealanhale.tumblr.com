@@ -8,21 +8,23 @@
 		{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
 		<meta name="text:Header slogan" content="is a tumblelog." />
 		<meta name="color:Background" content="#FFFFFF"/>
+		<meta name="text:Font Family" content="Quattrocento Sans, sans-serif"/>
 		<meta name="color:Link" content="#346B9A"/>
 		<meta name="color:Link hover" content="#9A6934"/>
-		<meta name="font:Body" content="Georgia, serif"/>
-		<meta name="font:Date" content="Helvetica, Arial, sans-serif"/>
 		<meta name="if:Show notes" content="0">
 		<meta name="if:Show album art on audio posts" content="1" />
 		<meta name="text:Disqus Shortname" content="" />
 		<meta name="if:Show comment count on frontpage" content="0" />
 		
 		<style>
+			@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700,400italic,700italic);
+
 			/* General styling */
 			body {
 				padding: 0; margin: 0;
 				background: {color:Background};
-				font: 14px/20px {font:Body};
+				font: 14px/20px;
+				font-family: {text:Font Family};
 			}
 			h1 { width: 540px; margin: 0 auto; }
 			h1 a, h1 {
