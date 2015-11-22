@@ -45,8 +45,10 @@
             a { color: {color:Link}; text-decoration: none; } 
             a:hover { color: {color:Link hover}; }
             a img { outline: 0; border: none; }
+            blockquote, .text { 
+                width: 470px;
+            }
             blockquote { 
-                width: 470px; 
                 margin-left: -30px; 
                 padding-left: 30px; 
                 color: #222;
@@ -277,7 +279,7 @@
                             <a href="{URL}"><img src="{Thumbnail}" alt="{Name}"></a>
                             {/block:Thumbnail}
                             <h2><a href="{URL}">{Name} &#10095;</a></h2> 
-                            {block:Description}{Description}{/block:Description}
+                            {block:Description}<div class="text">{Description}</div>{/block:Description}
                         {/block:Link}
                         
                         {block:Answer}
@@ -324,7 +326,7 @@
 
                         {block:Text}
                             {block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
-                            {Body}
+                            <div class="text">{Body}</div>
                         {/block:Text}
                         
                         <div class="tags">
