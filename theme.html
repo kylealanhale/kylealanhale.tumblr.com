@@ -273,6 +273,9 @@
                     {/block:Date}
                     <div class="realpost">
                         {block:Link}
+                            {block:Thumbnail}
+                            <a href="{URL}"><img src="{Thumbnail}" alt="{Name}"></a>
+                            {/block:Thumbnail}
                             <h2><a href="{URL}">{Name}</a></h2> 
                             {block:Description}{Description}{/block:Description}
                         {/block:Link}
